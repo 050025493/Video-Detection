@@ -16,11 +16,11 @@ def build_model():
     # 1. Load Pre-trained EfficientNetB0
     model = models.efficientnet_b0(weights=models.EfficientNet_B0_Weights.DEFAULT)
     
-    # 2. Freeze the base layers (Transfer Learning)
+    # 2. Freeze the base layers (Transfer Learning) 
     for param in model.features.parameters():
         param.requires_grad = False
         
-    # 3. Replace the Classifier Head
+    # 3. Modify Classifier for Binary Classification
     # Input size for B0 classifier is 1280
     model.classifier = nn.Sequential(
         nn.Dropout(p=0.3),
@@ -29,7 +29,7 @@ def build_model():
         
         nn.Dropout(p=0.3),
         nn.Linear(512, 1),
-        nn.Sigmoid() # Output probability 0-1
+        nn.Sigmoid() 
     )
     
     # 4. Apply He Initialization to the new layers

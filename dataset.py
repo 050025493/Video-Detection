@@ -45,7 +45,7 @@ def load_video_frames(video_path):
         if ret:
             # Convert BGR to RGB
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            # Apply transforms immediately -> becomes Tensor
+            # Apply transforms immediately ,it becomes Tensor
             frame_tensor = transform_pipeline(frame)
             frames.append(frame_tensor)
         else:
@@ -56,7 +56,7 @@ def load_video_frames(video_path):
     while len(frames) < config.FRAMES_PER_VIDEO:
         frames.append(torch.zeros(3, config.IMAGE_SIZE, config.IMAGE_SIZE))
         
-    # 5. Stack list of tensors into one big Tensor
+    # 5. stacking the list of tensor to one big tensor of shape (10, 3, 224, 224)
     return torch.stack(frames)
 
 def find_video_path(filename):

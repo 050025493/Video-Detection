@@ -31,10 +31,10 @@ with torch.no_grad():
         
         # Check if video was empty/broken
         # If shape is [10, 3, 224, 224], it's good. 
-        # If it's a zero-tensor but logical checks passed, we proceed.
+       
         if video_tensor.sum() == 0 and video_tensor.shape[0] > 0:
-             # Just a safety warning, but we still predict (will likely be 0.5)
-             pass
+            print(f"Warning: Video {video_name} is empty or broken.")
+            pass
 
         # B. Send directly to GPU (No extra transforms needed!)
         batch_input = video_tensor.to(device)
@@ -49,6 +49,6 @@ with torch.no_grad():
         results.append([video_name, pred_label, avg_prob])
 
 # 3. Save
-submission = pd.DataFrame(results, columns=['filename', 'Prediction', 'Probability'])
+submission = pd.DataFrame(results, columns=['filename', 'Prediction', 'Probability'])  # column names can be changed like gilename to video_name
 submission.to_csv('submission.csv', index=False)
 print("Success! 'submission.csv' generated.")

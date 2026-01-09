@@ -10,7 +10,7 @@ import wandb # Weights & Biases
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Training on: {device}")
 
-# 2. Initialize W&B (Optional)
+# 2. Initialize W&B 
 if config.USE_WANDB:
     wandb.init(
         project=config.WANDB_PROJECT,
