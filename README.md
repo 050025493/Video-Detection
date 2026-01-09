@@ -1,4 +1,5 @@
 🎥 Deepfake Video Detection System
+
 📌 Project Overview
 This project is an AI-powered security tool designed to distinguish between authentic videos and AI-generated "Deepfakes." As generative AI becomes more accessible, the risk of identity theft and misinformation increases. This system addresses that threat by using Computer Vision to analyze video frames for subtle artifacts invisible to the human eye, classifying content as either "Real" or "Fake" with 92.5% accuracy.
 
