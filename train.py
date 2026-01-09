@@ -35,9 +35,9 @@ best_val_loss = float('inf')
 patience_counter = 0
 
 print("\n--- Starting Training ---")
-
+# train loop
 for epoch in range(config.EPOCHS):
-    # --- TRAIN LOOP ---
+    
     net.train()
     running_loss = 0.0
     
@@ -55,7 +55,7 @@ for epoch in range(config.EPOCHS):
     
     avg_train_loss = running_loss / len(train_loader)
     
-    # --- VALIDATION LOOP ---
+   #validtion loop
     net.eval()
     val_loss = 0.0
     correct = 0
@@ -78,14 +78,14 @@ for epoch in range(config.EPOCHS):
     avg_val_loss = val_loss / len(val_loader)
     val_acc = correct / total
     
-    # --- LOGGING ---
+    # login wandb
     print(f"Epoch {epoch+1}/{config.EPOCHS} | Train Loss: {avg_train_loss:.4f} | Val Loss: {avg_val_loss:.4f} | Val Acc: {val_acc:.4f}")
     
     if config.USE_WANDB:
         wandb.log({"train_loss": avg_train_loss, "val_loss": avg_val_loss, "val_acc": val_acc})
 
-    # --- EARLY STOPPING & SAVING ---
-    # Save if this is the best model so far
+    # preventing overfitting using early stopping
+    
     if avg_val_loss < best_val_loss:
         best_val_loss = avg_val_loss
         patience_counter = 0 # Reset counter
