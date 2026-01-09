@@ -1,0 +1,11 @@
+{"time":"2026-01-08T23:13:37.2683897+05:30","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2026-01-08T23:13:38.4741691+05:30","level":"INFO","msg":"stream: created new stream","id":"g58driur"}
+{"time":"2026-01-08T23:13:38.4764434+05:30","level":"INFO","msg":"handler: started","stream_id":"g58driur"}
+{"time":"2026-01-08T23:13:38.5207172+05:30","level":"INFO","msg":"sender: started","stream_id":"g58driur"}
+{"time":"2026-01-08T23:13:38.5178071+05:30","level":"INFO","msg":"writer: started","stream_id":"g58driur"}
+{"time":"2026-01-08T23:13:38.521925+05:30","level":"INFO","msg":"stream: started","id":"g58driur"}
+{"time":"2026-01-08T23:13:40.5560697+05:30","level":"INFO","msg":"stream: closing","id":"g58driur"}
+{"time":"2026-01-08T23:13:42.4050358+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-08T23:13:42.9805896+05:30","level":"INFO","msg":"handler: closed","stream_id":"g58driur"}
+{"time":"2026-01-08T23:13:42.9827843+05:30","level":"INFO","msg":"sender: closed","stream_id":"g58driur"}
+{"time":"2026-01-08T23:13:42.9827843+05:30","level":"INFO","msg":"stream: closed","id":"g58driur"}

@@ -1,0 +1,5 @@
+test/
+train/
+wandb/
+__pycache__/
+*.pyc

@@ -1,0 +1,18 @@
+{"time":"2026-01-08T23:19:06.408227+05:30","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2026-01-08T23:19:07.287019+05:30","level":"INFO","msg":"stream: created new stream","id":"snog55xr"}
+{"time":"2026-01-08T23:19:07.2880354+05:30","level":"INFO","msg":"handler: started","stream_id":"snog55xr"}
+{"time":"2026-01-08T23:19:07.2940198+05:30","level":"INFO","msg":"stream: started","id":"snog55xr"}
+{"time":"2026-01-08T23:19:07.2940198+05:30","level":"INFO","msg":"writer: started","stream_id":"snog55xr"}
+{"time":"2026-01-08T23:19:07.2945552+05:30","level":"INFO","msg":"sender: started","stream_id":"snog55xr"}
+{"time":"2026-01-09T00:41:24.721298+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2026-01-09T00:41:27.0993061+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2026-01-09T01:07:31.6874076+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2026-01-09T05:37:53.7715821+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2026-01-09T08:35:57.5312077+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2026-01-09T08:36:38.5520491+05:30","level":"ERROR+4","msg":"filestream: fatal error: filestream: error making HTTP request: api: failed sending: POST https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream giving up after 6 attempt(s): Post \"https://api.wandb.ai/files/kunwaradityasingh7-vellore-institute-of-technology/Deepfake-Detection/snog55xr/file_stream\": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: . got response: <nil>"}
+{"time":"2026-01-09T10:45:40.3895356+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-09T10:45:40.3970706+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-01-09T10:45:40.4527739+05:30","level":"INFO","msg":"stream: closing","id":"snog55xr"}
+{"time":"2026-01-09T10:45:40.4533345+05:30","level":"INFO","msg":"handler: closed","stream_id":"snog55xr"}
+{"time":"2026-01-09T10:45:40.4543729+05:30","level":"INFO","msg":"sender: closed","stream_id":"snog55xr"}
+{"time":"2026-01-09T10:45:40.4543729+05:30","level":"INFO","msg":"stream: closed","id":"snog55xr"}

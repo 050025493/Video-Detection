@@ -1,0 +1,52 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            g20c5dotfa6vwdbeinyp4hh8j8f0lokx:
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "489061085184"
+                        used: "283754266624"
+                email: kunwaradityasingh7@gmail.com
+                executable: C:\Users\Kunwar Aditya Singh\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: b5d84ee88f5005ac24afd58179309ab0a8eb6399
+                    remote: https://github.com/050025493/Video-Detection.git
+                host: DESKTOP-4FL3UCF
+                memory:
+                    total: "16849293312"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\Kunwar Aditya Singh\OneDrive\Desktop\Video detection\train.py
+                python: CPython 3.11.9
+                root: C:\Users\Kunwar Aditya Singh\OneDrive\Desktop\Video detection
+                startedAt: "2026-01-08T17:43:34.386738Z"
+                writerId: g20c5dotfa6vwdbeinyp4hh8j8f0lokx
+        m: []
+        python_version: 3.11.9
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 16
+            "4": 3.11.9
+            "5": 0.23.1
+            "8":
+                - 3
+            "12": 0.23.1
+            "13": windows-amd64
+architecture:
+    value: EfficientNetB0
+batch_size:
+    value: 32
+epochs:
+    value: 50
+lr:
+    value: 0.0001
